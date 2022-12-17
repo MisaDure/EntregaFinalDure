@@ -1,0 +1,398 @@
+/* Reset/Fuente */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Orbitron', sans-serif;
+  font-family: 'Sarpanch', sans-serif; }
+
+/* Estilos de body*/
+body {
+  /* Imagen de fondo */
+  background-image: url(../assets/fondo/istockphoto-1207017851-612x612_auto_x2_auto_x2.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  /* Main */
+  /* Footer */ }
+  body main h2 {
+    text-align: center;
+    padding: 1rem;
+    color: white;
+    font-size: 3rem;
+    border-radius: 10px; }
+  body main div div div div .imgBlog {
+    width: 100%; }
+  body main div div div div .marginOne {
+    margin-bottom: 1rem;
+    min-height: 13em; }
+  body main div div div div div .styleText {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.5;
+    max-height: 15em;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 8; }
+  body main .borde1 {
+    border: 3px solid #f733b1; }
+  body main .borde2 {
+    border: 3px solid #00b5d3; }
+  body main .borde3 {
+    border: 3px solid rgba(43, 1, 34, 0.849); }
+  body footer div a .footerHs {
+    color: white;
+    margin: 1rem; }
+  body footer div a .bottonBack {
+    text-decoration: none; }
+  body footer div .footerHs {
+    color: white;
+    margin: 1rem; }
+
+/* MediaQuery */
+@media screen and (min-width: 320px) {
+  .contenedor {
+    background-color: #212729;
+    margin-top: 2rem;
+    border-radius: 10px; }
+  .tarjeta {
+    background-color: #212729;
+    color: white; }
+  .marencero {
+    margin: 0; }
+  /*   Estilo de boton   */
+  .buttonNav {
+    background-color: #f733b1;
+    color: white; }
+  .buttonNav:hover {
+    background-color: white;
+    border: 1px solid #f733b1;
+    color: #f733b1;
+    border-radius: 5px;
+    transition: 0.2s; }
+  .botonRosa {
+    background-color: #f733b1;
+    color: white; }
+  .botonRosa:hover {
+    background-color: #212729;
+    border: 1px solid #f733b1;
+    color: #f733b1;
+    border-radius: 5px;
+    transition: 0.2s; }
+  .botonRojo {
+    background-color: #cc2727;
+    color: #212729; }
+  .botonRojo:hover {
+    background-color: white;
+    border: 1px solid #cc2727;
+    color: #cc2727;
+    border-radius: 5px;
+    transition: 0.2s; }
+  .botonCeleste {
+    background-color: #00b5d3;
+    color: #212729; }
+  .botonCeleste:hover {
+    background-color: #212729;
+    border: 1px solid #00b5d3;
+    color: #00b5d3;
+    border-radius: 5px;
+    transition: 0.2s; }
+  .botonVerde {
+    background-color: #2e7a48;
+    color: #212729; }
+  .botonVerde:hover {
+    background-color: #212729;
+    border: 1px solid #2e7a48;
+    color: #2e7a48;
+    border-radius: 5px;
+    transition: 0.2s; }
+  /* Sistema de grids */
+  .grid {
+    display: grid;
+    grid-template-areas: "div2 div2 div2" "div1 div1 div1" "div3 div3 div3" "div4 div4 div4" "div5 div5 div5"; }
+  .div1 {
+    grid-area: div1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    min-width: 300px; }
+  .styleDiv1 {
+    width: 100%; }
+  .div2 {
+    background-color: #212729;
+    grid-area: div2; }
+    .div2 h2 {
+      font-size: 2rem;
+      color: white; }
+  .div3 {
+    background-color: #212729;
+    grid-area: div3;
+    display: flex;
+    padding-left: 1.6rem;
+    padding-bottom: 1rem; }
+    .div3 p {
+      font-size: 2rem;
+      color: white; }
+  .div4 {
+    background-color: #212729;
+    grid-area: div4;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    min-height: 10rem; }
+    .div4 ul li {
+      color: white; }
+  .div5 {
+    background-color: #212729;
+    grid-area: div5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem; }
+    .div5 p {
+      color: white; }
+  .dropdownStyle {
+    text-decoration: none; }
+  .colorTexto {
+    color: white; }
+  .carrito {
+    margin: 2rem auto 2rem auto;
+    padding: 1rem;
+    border: 3px solid #f733b1; }
+  header .titleLogo {
+    display: flex; }
+    header .titleLogo h1 {
+      font-size: 3rem;
+      color: white; }
+  header nav div ul a li {
+    border: 2px solid white;
+    color: white;
+    font-size: 1rem;
+    border-radius: 10px; }
+  header nav div form button {
+    background-color: #f733b1;
+    border: 1px solid #f733b1;
+    color: white;
+    border-radius: 5px; } }
+
+@media screen and (min-width: 600px) {
+  /* Estilos de body*/
+  .contenedor {
+    background-color: #212729;
+    margin-top: 2rem;
+    border-radius: 10px; }
+  .div1 {
+    grid-area: div1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    min-width: 200px; }
+  .div2 {
+    background-color: #212729;
+    grid-area: div2; }
+    .div2 h2 {
+      font-size: 1rem;
+      color: white; }
+  .div3 {
+    background-color: #212729;
+    grid-area: div3;
+    display: flex;
+    padding-left: 1.6rem;
+    padding-bottom: 1rem; }
+    .div3 p {
+      font-size: 1rem;
+      color: white; }
+  .div4 {
+    background-color: #212729;
+    grid-area: div4;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    min-height: 10rem;
+    margin-right: 1rem; }
+    .div4 ul li {
+      font-size: 0.5rem;
+      color: white; }
+  /*   Estilos de boton   */
+  .buttonNav {
+    background-color: #f733b1;
+    color: white; }
+  .buttonNav:hover {
+    background-color: white;
+    border: 1px solid #f733b1;
+    color: #f733b1;
+    border-radius: 5px;
+    transition: 0.2s; }
+  .botonRosa {
+    background-color: #f733b1;
+    color: white; }
+  .botonRosa:hover {
+    background-color: #212729;
+    border: 1px solid #f733b1;
+    color: #f733b1;
+    border-radius: 5px;
+    transition: 0.2s; }
+  .botonRojo {
+    background-color: #cc2727;
+    color: #212729; }
+  .botonRojo:hover {
+    background-color: white;
+    border: 1px solid #cc2727;
+    color: #cc2727;
+    border-radius: 5px;
+    transition: 0.2s; }
+  .botonCeleste {
+    background-color: #00b5d3;
+    color: #212729; }
+  .botonCeleste:hover {
+    background-color: #212729;
+    border: 1px solid #00b5d3;
+    color: #00b5d3;
+    border-radius: 5px;
+    transition: 0.2s; }
+  .botonVerde {
+    background-color: #2e7a48;
+    color: #212729; }
+  .botonVerde:hover {
+    background-color: #212729;
+    border: 1px solid #2e7a48;
+    color: #2e7a48;
+    border-radius: 5px;
+    transition: 0.2s; }
+  body header .titleLogo {
+    display: flex; }
+    body header .titleLogo h1 {
+      font-size: 3rem;
+      color: white; }
+  body header nav div ul a li {
+    border: 2px solid white;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 10px; }
+  body header nav div form button {
+    background-color: #f733b1;
+    border: 1px solid #f733b1;
+    color: white;
+    border-radius: 5px; }
+  body main div div div .palpitar {
+    transition: 1s; }
+  body main div div div .palpitar:hover {
+    transform: scale(1.05);
+    transition: 1s; }
+  /* Sistema de grids */
+  .grid {
+    display: grid;
+    grid-template-areas: "div1 div2 div2" "div1 div3 div3" "div1 div4 div4" "div1 div5 div5"; } }
+
+@media screen and (min-width: 1024px) {
+  /* Estilos de body*/
+  .contenedor {
+    background-color: #212729;
+    margin-top: 2rem;
+    border-radius: 10px; }
+  .div1 {
+    grid-area: div1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    min-width: 500px; }
+  .div2 {
+    background-color: #212729;
+    grid-area: div2; }
+    .div2 h2 {
+      font-size: 2rem;
+      color: white; }
+  .div3 {
+    background-color: #212729;
+    grid-area: div3;
+    display: flex;
+    padding-left: 1.6rem;
+    padding-bottom: 1rem; }
+    .div3 p {
+      font-size: 2rem;
+      color: white; }
+  .div4 {
+    background-color: #212729;
+    grid-area: div4;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    min-height: 14rem; }
+    .div4 ul li {
+      font-size: 1rem;
+      color: white; }
+  /*   Estilos de boton   */
+  .buttonNav {
+    background-color: #f733b1;
+    color: white; }
+  .buttonNav:hover {
+    background-color: white;
+    border: 1px solid #f733b1;
+    color: #f733b1;
+    border-radius: 5px;
+    transition: 0.2s; }
+  .botonRosa {
+    background-color: #f733b1;
+    color: white; }
+  .botonRosa:hover {
+    background-color: #212729;
+    border: 1px solid #f733b1;
+    color: #f733b1;
+    border-radius: 5px;
+    transition: 0.2s; }
+  .botonRojo {
+    background-color: #cc2727;
+    color: #212729; }
+  .botonRojo:hover {
+    background-color: white;
+    border: 1px solid #cc2727;
+    color: #cc2727;
+    border-radius: 5px;
+    transition: 0.2s; }
+  .botonCeleste {
+    background-color: #00b5d3;
+    color: #212729; }
+  .botonCeleste:hover {
+    background-color: #212729;
+    border: 1px solid #00b5d3;
+    color: #00b5d3;
+    border-radius: 5px;
+    transition: 0.2s; }
+  .botonVerde {
+    background-color: #2e7a48;
+    color: #212729; }
+  .botonVerde:hover {
+    background-color: #212729;
+    border: 1px solid #2e7a48;
+    color: #2e7a48;
+    border-radius: 5px;
+    transition: 0.2s; }
+  body header .titleLogo {
+    display: flex; }
+    body header .titleLogo h1 {
+      font-size: 5rem;
+      color: white; }
+  body header nav ul {
+    align-items: center; }
+    body header nav ul li {
+      padding: 0.5rem;
+      font-size: 1.5rem; }
+    body header nav ul li:hover {
+      border: 1px solid #00b5d3;
+      color: #00b5d3;
+      transition: 0.2s; }
+  body header nav form button:hover {
+    background-color: white;
+    border: 1px solid #f733b1;
+    color: #f733b1;
+    border-radius: 5px;
+    transition: 0.2s; }
+  body main div div div .palpitar {
+    transition: 1s; }
+  body main div div div .palpitar:hover {
+    transform: scale(1.05);
+    transition: 1s; }
+  /* Sistema de grids */
+  .grid {
+    display: grid;
+    grid-template-areas: "div1 div2 div2" "div1 div3 div3" "div1 div4 div4" "div1 div5 div5"; } }

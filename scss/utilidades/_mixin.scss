@@ -1,0 +1,20 @@
+@import "variables";
+
+@mixin styleTextFooter{
+    color: $color-letra;
+    margin: 1rem;
+}
+
+@mixin BotonRosa($colorFondo, $color){
+    background-color: $colorFondo;
+    color: $color;
+}
+
+@mixin StyleBottomRosa($colorFondo, $color){
+    background-color: $colorFondo;
+    border: 1px solid $color;
+    color: $color;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+

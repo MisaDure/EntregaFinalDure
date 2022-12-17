@@ -1,0 +1,31 @@
+/* Reset/Fuente */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Sarpanch', sans-serif;
+}
+
+// Archivos importados
+
+@import "utilidades/variables";
+@import "utilidades/mapa";
+@import "utilidades/mixin";
+
+/* Estilos de body*/
+
+body{
+    /* Imagen de fondo */
+    background-image: url(../assets/fondo/istockphoto-1207017851-612x612_auto_x2_auto_x2.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    /* Main */
+    @import "contenedores/main";
+    /* Footer */
+    @import "contenedores/footer";
+}
+
+/* MediaQuery */
+@import "contenedores/media";

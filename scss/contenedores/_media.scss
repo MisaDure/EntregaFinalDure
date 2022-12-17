@@ -1,0 +1,493 @@
+    @import "../utilidades/variables";
+    @import "../utilidades/mapa";
+    @import "../utilidades/mixin";
+    @import "../utilidades/extend";
+
+@media screen and (min-width:320px){
+    
+
+    .contenedor{
+    background-color: $color-fonto;
+    margin-top: 2rem;
+    border-radius: 10px;
+    }
+
+    .tarjeta{
+        background-color: $color-fonto;
+        color: $color-letra;
+    }
+
+    .marencero{
+        margin: 0;
+    }
+
+    /*   Estilo de boton   */
+
+    .buttonNav{
+        @include BotonRosa($rosa, $color-letra);
+    }
+
+    .buttonNav:hover{
+        @include StyleBottomRosa($color-letra, $rosa);
+    }
+
+    .botonRosa{
+        @include BotonRosa($rosa, $color-letra);
+    }
+
+    .botonRosa:hover{
+        @include StyleBottomRosa($color-fonto, $rosa);
+    }
+
+    .botonRojo{
+        @include BotonRosa(rgb(204, 39, 39), $color-fonto);
+    }
+
+    .botonRojo:hover{
+        @include StyleBottomRosa($color-letra, rgb(204, 39, 39));
+    }
+
+    .botonCeleste{
+        @include BotonRosa($celeste, $color-fonto);
+    }
+
+    .botonCeleste:hover{
+        @include StyleBottomRosa($color-fonto, $celeste);
+    }
+
+    .botonVerde{
+        @include BotonRosa(rgb(46, 122, 72), $color-fonto);
+    }
+
+    .botonVerde:hover{
+        @include StyleBottomRosa($color-fonto, rgb(46, 122, 72));
+    }
+
+    /* Sistema de grids */
+
+    .grid{
+        display: grid;
+
+        grid-template-areas: 
+            "div2 div2 div2"
+            "div1 div1 div1"
+            "div3 div3 div3"
+            "div4 div4 div4"
+            "div5 div5 div5";
+    }
+
+
+
+    .div1{
+        grid-area: div1;
+        @extend %styleGrids;
+        margin: 1rem;
+        min-width: 300px;
+    }
+
+    .styleDiv1{
+        width: 100%;
+    }
+
+    .div2{
+        background-color: $color-fonto;
+        grid-area: div2;
+        h2{
+            font-size: 2rem;
+            color: $color-letra;
+        }
+    }
+
+    .div3{
+        background-color: $color-fonto;
+        grid-area: div3;
+        display: flex;
+        padding-left: 1.6rem;
+        padding-bottom: 1rem;
+        p{
+            font-size: 2rem;
+            color: $color-letra;
+        }
+    }
+
+    .div4{
+        background-color: $color-fonto;
+        grid-area: div4;
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+        min-height: 10rem;
+        ul{
+            li{
+            color: $color-letra;
+            }
+            
+        }
+    }
+
+    .div5{
+        background-color: $color-fonto;   
+        grid-area: div5;
+        @extend %styleGrids;
+        padding-bottom: 1rem;
+        p{
+            color: $color-letra;
+        }
+    }
+
+    .dropdownStyle{
+        text-decoration: none;
+    }
+
+    .colorTexto{
+        color: $color-letra;
+    }
+
+    .carrito{
+        margin: 2rem auto 2rem auto;
+        padding: 1rem;
+        border: 3px solid $rosa;
+    }
+
+    header{
+        .titleLogo{
+            display: flex;
+                h1{
+                font-size: 3rem;
+                color: $color-letra;
+                }
+            }
+        nav{
+            div{
+                ul{
+                    a{
+                        li{
+                        border: 2px solid $color-letra;
+                        color: $color-letra;
+                        font-size: 1rem;
+                        border-radius: 10px;    
+                        }
+                    }
+                }
+                form{
+                    button{
+                        background-color: $rosa;
+                        border: 1px solid $rosa;
+                        color: $color-letra;
+                        border-radius: 5px;
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:600px){
+    /* Estilos de body*/
+    .contenedor{
+        background-color: $color-fonto;
+        margin-top: 2rem;
+        border-radius: 10px;
+        
+    }
+
+    .div1{
+        grid-area: div1;
+        @extend %styleGrids;
+        margin: 1rem;
+        min-width: 200px;
+    }
+
+    .div2{
+        background-color: $color-fonto;
+        grid-area: div2;
+        h2{
+            font-size: 1rem;
+            color: $color-letra;
+        }
+    }
+
+    .div3{
+        background-color: $color-fonto;
+        grid-area: div3;
+        display: flex;
+        padding-left: 1.6rem;
+        padding-bottom: 1rem;
+        p{
+            font-size: 1rem;
+            color: $color-letra;
+        }
+    }
+
+    .div4{
+        background-color: $color-fonto;
+        grid-area: div4;
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+        min-height: 10rem;
+        margin-right: 1rem;
+        ul{
+            li{
+                font-size: 0.5rem;
+                color: $color-letra;
+            }
+            
+        }
+    }
+
+    /*   Estilos de boton   */
+
+    .buttonNav{
+        @include BotonRosa($rosa, $color-letra);
+    }
+
+    .buttonNav:hover{
+        @include StyleBottomRosa($color-letra, $rosa);
+    }
+
+    .botonRosa{
+        @include BotonRosa($rosa, $color-letra);
+    }
+
+    .botonRosa:hover{
+        @include StyleBottomRosa($color-fonto, $rosa);
+    }
+
+    .botonRojo{
+        @include BotonRosa(rgb(204, 39, 39), $color-fonto);
+    }
+
+    .botonRojo:hover{
+        @include StyleBottomRosa($color-letra, rgb(204, 39, 39));
+    }
+
+    .botonCeleste{
+        @include BotonRosa($celeste, $color-fonto);
+    }
+
+    .botonCeleste:hover{
+        @include StyleBottomRosa($color-fonto, $celeste);
+    }
+
+    .botonVerde{
+        @include BotonRosa(rgb(46, 122, 72), $color-fonto);
+    }
+
+    .botonVerde:hover{
+        @include StyleBottomRosa($color-fonto, rgb(46, 122, 72));
+    }
+    
+    body{    
+        header{
+            .titleLogo{
+                display: flex;
+                    h1{
+                    font-size: 3rem;
+                    color: $color-letra;
+                    }
+                }
+            nav{
+                div{
+                    ul{
+                        a{
+                            li{
+                            border: 2px solid $color-letra;
+                            color: $color-letra;
+                            font-size: 1.5rem;
+                            border-radius: 10px;    
+                            }
+                        }
+                    }
+                    form{
+                        button{
+                            background-color: $rosa;
+                            border: 1px solid $rosa;
+                            color: $color-letra;
+                            border-radius: 5px;
+                        }
+                        
+                    }
+                }
+            }
+        }  
+        main{
+            div{
+                div{
+                    div{
+                        .palpitar{
+                            transition: 1s;
+                        }
+                        .palpitar:hover{
+                            transform: scale(1.05);
+                            transition: 1s;
+                        }
+                    }
+                }
+            }
+        }  
+    }
+
+    /* Sistema de grids */
+    .grid{
+        display: grid;
+    
+        grid-template-areas: 
+        "div1 div2 div2"
+        "div1 div3 div3"
+        "div1 div4 div4"
+        "div1 div5 div5";
+    }
+}
+
+@media screen and (min-width:1024px){
+    @import "../utilidades/mixin";
+    
+    /* Estilos de body*/
+    .contenedor{
+        background-color: $color-fonto;
+        margin-top: 2rem;
+        border-radius: 10px;
+    }
+
+    .div1{
+        grid-area: div1;
+        @extend %styleGrids;
+        margin: 1rem;
+        min-width: 500px;
+    }
+
+    .div2{
+        background-color: $color-fonto;
+        grid-area: div2;
+        h2{
+            font-size: 2rem;
+            color: $color-letra;
+        }
+    }
+
+    .div3{
+        background-color: $color-fonto;
+        grid-area: div3;
+        display: flex;
+        padding-left: 1.6rem;
+        padding-bottom: 1rem;
+        p{
+            font-size: 2rem;
+            color: $color-letra;
+        }
+    }
+
+    .div4{
+        background-color: $color-fonto;
+        grid-area: div4;
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+        min-height: 14rem;
+        ul{
+            li{
+                font-size: 1rem;
+                color: $color-letra;
+            }
+            
+        }
+    }
+
+    /*   Estilos de boton   */
+
+    .buttonNav{
+        @include BotonRosa($rosa, $color-letra);
+    }
+
+    .buttonNav:hover{
+        @include StyleBottomRosa($color-letra, $rosa);
+    }
+
+    .botonRosa{
+        @include BotonRosa($rosa, $color-letra);
+    }
+
+    .botonRosa:hover{
+        @include StyleBottomRosa($color-fonto, $rosa);
+    }
+
+    .botonRojo{
+        @include BotonRosa(rgb(204, 39, 39), $color-fonto);
+    }
+
+    .botonRojo:hover{
+        @include StyleBottomRosa($color-letra, rgb(204, 39, 39));
+    }
+
+    .botonCeleste{
+        @include BotonRosa($celeste, $color-fonto);
+    }
+
+    .botonCeleste:hover{
+        @include StyleBottomRosa($color-fonto, $celeste);
+    }
+
+    .botonVerde{
+        @include BotonRosa(rgb(46, 122, 72), $color-fonto);
+    }
+
+    .botonVerde:hover{
+        @include StyleBottomRosa($color-fonto, rgb(46, 122, 72));
+    }
+    
+    body{    
+        header{
+            .titleLogo{
+                display: flex;
+                h1{
+                font-size: 5rem;
+                color: $color-letra;
+                }
+            }
+            nav{
+                ul{
+                    align-items: center;
+                    li{
+                        padding: 0.5rem;
+                        font-size: 1.5rem;
+                    }
+                    li:hover{
+                        border: 1px solid $celeste;
+                        color: $celeste;
+                        transition: 0.2s;
+                    }
+                }
+                form{
+                    button:hover{
+                        @include StyleBottomRosa($color-letra, $rosa);
+                    }
+                }
+            }
+        }  
+        main{
+            div{
+                div{
+                    div{
+                        .palpitar{
+                            transition: 1s;
+                        }
+                        .palpitar:hover{
+                            transform: scale(1.05);
+                            transition: 1s;
+                        }
+                    }
+                }
+            }
+        }  
+    }
+
+    /* Sistema de grids */
+    .grid{
+        display: grid;
+    
+        grid-template-areas: 
+        "div1 div2 div2"
+        "div1 div3 div3"
+        "div1 div4 div4"
+        "div1 div5 div5";
+    }
+}

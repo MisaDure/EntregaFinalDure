@@ -1,0 +1,44 @@
+@import "../utilidades/mapa";
+
+main{
+    h2{
+        text-align: center;
+        padding:1rem ;
+        color: $color-letra;
+        font-size: 3rem;
+        border-radius: 10px;
+    }
+    div{
+        div{
+            div{
+                div{
+                    .imgBlog{
+                        width: 100%;
+                    }
+                    .marginOne{
+                        margin-bottom: 1rem;
+                        min-height: 13em;
+                    }
+                    div{
+                        .styleText{
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            line-height: 1.5;
+                            max-height: 15em;
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 8;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @each $red, $color in $coloresBordes {
+        .#{$red}{
+            border: 3px solid $color;
+        }
+    }
+
+    
+}

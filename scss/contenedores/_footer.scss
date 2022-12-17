@@ -1,0 +1,16 @@
+@import "../utilidades/mixin";
+footer{
+    div{
+        a{
+            .footerHs{
+                @include styleTextFooter;
+            }
+            .bottonBack{
+                text-decoration: none;
+            }
+        }
+        .footerHs{
+            @include styleTextFooter;
+        }
+    }
+}
